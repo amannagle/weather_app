@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    justify-content: center;
+    background-color: #120E43;
+    color: #fff;
+}
+
+.heading{
+    display: flex;
+    gap: 0.25em;
+    align-items: center;
+}
+
+.logo{
+    color: #46B2E0;
+}

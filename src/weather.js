@@ -10,8 +10,8 @@ async function getWeather(city)
          desc: weather_data.weather[0].description,
          feels_like: weather_data.main.feels_like,
          temp: weather_data.main.temp,
-         temp_max:weather_data.main.temp_max,
-         temp_min:weather_data.main.temp_min,
+         max_temp:weather_data.main.temp_max,
+         min_temp:weather_data.main.temp_min,
          humidity:weather_data.main.humidity,
      }
     }
