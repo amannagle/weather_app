@@ -9,7 +9,10 @@ form.addEventListener("submit",(e)=>{
 })
 
 search_button.addEventListener('click',async()=>{
+    
     let city_name = search_input.value;
+    search_input.value='';
     const weather_obj = await getWeather(city_name);
+    if(weather_obj != null)
     setWeather(weather_obj);
 })

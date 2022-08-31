@@ -1,27 +1,122 @@
-*{
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    border: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-header{
+header {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  justify-content: center;
+  background-color: #120e43;
+  color: #fff;
+}
+
+.heading {
+  display: flex;
+  gap: 0.25em;
+  align-items: center;
+}
+
+.logo {
+  color: #46b2e0;
+}
+
+body {
+  background: url("../bg2.jpg");
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  margin: 0 auto;
+
+  margin-top: auto;
+}
+section.search_bar{
+    margin: 45px auto;
+}
+
+section.search_bar button{
+    background-color: transparent;
+    font-size: 1rem;
+    transform: rotate(0deg);
+}
+
+form{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+}
+
+section.search_bar input{
+    border-radius: 20px;
+    width: 400px;
+    padding: 10px 15px;
+}
+
+section.search_bar button{
+    font-size: 1.5rem;
+    margin-top: 2px;
+}
+footer {
+  margin-top: auto;
+}
+
+div.card{
+    font-family: 'Signika', sans-serif;
+    display: none;
+    flex-direction: column;
+    gap: 2em;
+    background-color: #120e43;
+    color: #fff;
+    padding: 100px 75px;
+    border-radius: 30px;
+}
+
+
+div.card h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+p.desc{
+    text-align: center;
+}
+
+div.temps{
+    /* text-align: center; */
+    font-size: 1.25rem;
+}
+
+div.temps p{
     display: flex;
     width: 100%;
-    margin: 0 auto;
-    padding: 10px 20px;
+}
+
+footer{
+    background-color: #120e43;
+    color: #fff;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: #120E43;
+    padding: 20px 10px;
+    gap: 0.5em;
+}
+footer a{
+    text-decoration: none;
     color: #fff;
 }
-
-.heading{
-    display: flex;
-    gap: 0.25em;
-    align-items: center;
-}
-
-.logo{
-    color: #46B2E0;
+footer a:hover i,
+footer a:focus i{
+    opacity: 70%;
+    transition: all 300ms ease-in-out;
 }

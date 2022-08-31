@@ -2,8 +2,8 @@ async function getWeather(city)
 {
     try{
     const weather_response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e855dc0381e0dc05852e114630e3cfcf&units=metric`,{mode: 'cors'});
+    if (!weather_response.ok) throw new Error(`${city} not found`);
     const weather_data = await weather_response.json();
-    const weather_main = await weather_data.main;
     console.log(weather_data);
      return{
          name: weather_data.name,
@@ -17,6 +17,7 @@ async function getWeather(city)
     }
     catch(err)
     {
+        alert(err);
         console.log(err)
     }
 }
